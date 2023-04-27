@@ -1,37 +1,15 @@
-<p align="center"><img src="https://raw.githubusercontent.com/itspedruu/walk-and-listen/master/assets/banner.png"/></p>
+<p align="center"><img src="assets/banner.png"/></p>
 
-<h1 align="center">Walk & Listen</h1>
+<h1 align="center">Dirija & Ouça</h1>
 
-This is an website app inspired by [Drive and Listen](https://driveandlisten.herokuapp.com). This is completely open-source and the only third-party service it uses is the [iFrame API by Google](https://developers.google.com/youtube/iframe_api_reference) to control the videos on the background. Please enjoy the app [here](https://pedropinto.tech/walk-and-listen).
+Este projeto é um Fork do projeto [Walk & Listen](https://github.com/itspedruu/walk-and-listen) que por sua vez é inspirado em um site chamado [Drive and Listen](https://driveandlisten.herokuapp.com). No projeto customizei todos os vídeos exibidos, assim como as rádios e interface do usário. Para isso editei os arquivos HTML, CSS e JavaScript. Este projeto é totalmente de código aberto e o único serviço de terceiros que ele usa é o [iFrame API by Google](https://developers.google.com/youtube/iframe_api_reference) para controlar os vídeos que rodam em background. Visite a página clicando [aqui](https://pedropinto.tech/walk-and-listen).
 
-# Setup
+# Como tudo funciona
 
-1. Clone this project
-2. Open the `index.html`
-3. Great. You have your own Walk and Listen running locally.
+Todo os vídeos apresentados na página são importados do YouTube através do id único que cada vídeo possui.
+O vídeo é carregado assim que o usuário visita a página, clica em uma das opções de cidade ou no botão de "Me leve pra passear".
 
-If you need to add more locations locally go to the file `js/locations.js` and increment there with all the respective properties: `id`, `name`, `videoId` and `radio`.
+### Como a rádio funciona?
 
-# Magic behind this
+Todas as rádios são carregadas através do endereço oficial de streaming. Os endereços foram conseguidos através da API do site [radiowebsites.org](https://radiowebsites.org/).
 
-To begin with, a huge thank you to (...) for providing high quality walking tours on cities from all around the globe. This is where the videos where scrapped from and implemented on the website.
-
-### How did I get the radio urls?
-
-Simply by looking at the source code of a great website, [radiowebsites.org](https://radiowebsites.org/), which provides a lot of radios from around the world and at their page source code they call this api where they get the source url of the radios.
-
-### How did I cancel the play/pause button of youtube?
-
-I just add a simple line of css code to the iframe player
-
-```css
-.player {
-	pointer-events: none;
-}
-```
-
-### How did I remove the youtube information such as youtube channel title and etc
-
-Just adding a height of 120% and removing the overflow of the page will remove the top and bottom youtube extra controllers.
-
-* You can see more of the magic by looking at the source code.
