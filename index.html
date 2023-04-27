@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<!-- Title -->
-		<title>Walk & Listen</title>
+		<title>Dirija & Ouça</title>
 
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="assets/icon.png">
@@ -11,18 +11,18 @@
 
 		<!-- Twitter metadata -->
 		<meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Walk & Listen" />
-        <meta name="twitter:description" content="Walk around your favourite cities while listening to local radios." />
-        <meta name="twitter:image" content="https://raw.githubusercontent.com/itspedruu/walk-and-listen/master/assets/banner.png" />
+        <meta name="twitter:title" content="Dirija & Ouça" />
+        <meta name="twitter:description" content="Dirija pelas cidades enquanto ouve rádios locais." />
+        <meta name="twitter:image" content="assets/banner.png" />
 		
 		<!-- Open Graph metadata-->
-		<meta property="og:url" content="https://pedropinto.tech/walk-and-listen"/>
-        <meta property="og:title" content="Walk & Listen" />
-        <meta property="og:description" content="Walk around favourite cities while listening to local radios." />
-        <meta property="og:image" content="https://raw.githubusercontent.com/itspedruu/walk-and-listen/master/assets/banner.png" />
+		<meta property="og:url" content=""/>
+        <meta property="og:title" content="Dirija & Ouça" />
+        <meta property="og:description" content="Dirija pelas cidades enquanto ouve rádios locais." />
+        <meta property="og:image" content="assets/banner.png" />
 		
 		<!-- Description metadata-->
-		<meta name="description" content="Walk around your favourite cities while listening to local radios." />
+		<meta name="description" content="Dirija pelas cidades enquanto ouve rádios locais. Inspirado por Drive & Listen." />
 
 		<!-- Styles -->
 		<link href="css/index.css" rel="stylesheet">
@@ -32,6 +32,7 @@
 		<!-- Scripts -->
 		<script src="https://www.youtube.com/iframe_api"></script>
 		<script src="js/locations.js"></script>
+		<!-- <script src="js/locations2.js"></script> -->
 		<script src="js/radio.js"></script>
 		<script src="js/player.js"></script>
 		<script src="js/state.js"></script>
@@ -40,7 +41,7 @@
 		<div class="app">
 			<!-- Loading element -->
 			<div class="loading">
-				<h1>"LOADING"</h1>
+				<h1>"CARREGANDO"</h1>
 			</div>
 
 			<!-- Location Element-->
@@ -57,7 +58,7 @@
 				<!-- Cities -->
 				<div class="cities">
 					<div class="cities-header">
-						<p>Cities</p>
+						<p>Cidades</p>
 					</div>
 					<div class="cities-list">
 						<ul></ul>
@@ -66,7 +67,7 @@
 
 				<!-- Random City -->
 				<div class="random-city" onclick="changeLocation(chooseRandomLocation().id)">
-					<p>Take me to a good place.</p>
+					<p>Me leve para passear</p>
 				</div>
 
 				<!-- Radio -->
@@ -89,13 +90,13 @@
 				<div class="configuration">
 					<!-- Noise configuration -->
 					<div class="configuration-group">
-						<p>Noise</p>
+						<p><i class="fa fa-volume-up" aria-hidden="true"></i></p>
 						<button onclick="toggleNoise(this)">OFF</button>
 					</div>
 
 					<!-- Speed configuration -->
 					<div class="configuration-group">
-						<p>Speed</p>
+						<p><i class="fa fa-car" aria-hidden="true"></i></p>
 
 						<div class="buttons">
 							<button data-speed="1" class="active" onclick="setSpeed(1)">1X</button>
@@ -107,10 +108,10 @@
 
 				<div class="information">
 					<div class="social">
-						<a target="blank" href="https://github.com/itspedruu/walk-and-listen"><i class="fab fa-github"></i></a>
-						<a target="blank" href="https://twitter.com/itspedruu"><i class="fab fa-twitter"></i></a>
-						<a target="blank" href="mailto:pedropinto.01@hotmail.com"><i class="fas fa-envelope"></i></a>
-						<a target="blank" href="https://pedropinto.tech"><i class="fas fa-globe"></i></a>
+						<a target="blank" href="https://github.com/andre-sugai"><i class="fab fa-github"></i></a>
+						<a target="blank" href="https://twitter.com/andre_sugai"><i class="fab fa-twitter"></i></a>
+						<a target="blank" href="mailto:andre_sugai@terra.com.br"><i class="fas fa-envelope"></i></a>
+						<a target="blank" href="https://www.linkedin.com/in/sugai/"><i class="fas fa-globe"></i></a>
 					</div>
 					
 					<div class="video-source">
@@ -120,8 +121,8 @@
 
 				<!-- Footer -->
 				<div class="footer">
-					<p>Inspired by <a target="blank" href="https://driveandlisten.herokuapp.com">Drive & Listen.</a></p>
-					<p>This is an open-source alternative.</p>
+					<!-- <p>Inspired by <a target="blank" href="https://driveandlisten.herokuapp.com">Drive & Listen.</a></p>
+					<p>This is an open-source alternative.</p> -->
 				</div>
 			</div>
 		</div>
