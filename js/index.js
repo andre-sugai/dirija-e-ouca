@@ -61,6 +61,7 @@ function toggleMenu() {
 function changeVideoSource(videoId) {
 	const link = document.querySelector('.video-source a');
 
+	// link.href = `https://youtube.com/embed?listType=playlist&list=PL${videoId}`;
 	link.href = `https://youtube.com/watch?v=${videoId}`;
 }
 
