@@ -43,5 +43,9 @@ function onPlayerStateChange(event) {
 		changeLoadingState(false);
 		state.currentPlayer.seekTo(state.currentLocation.startTime);
 		state.listenedToPlayEvent = true;
+	} else if (event.data == YT.PlayerState.ENDED) {
+		// Quando o vídeo terminar, carregue uma nova localização aleatória
+		const randomLocation = chooseRandomLocation();
+		changeLocation(randomLocation.id);
 	}
 }
