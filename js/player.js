@@ -11,7 +11,7 @@ function playVideo(location) {
 			playerVars: {
 				autoplay: 1,
 				mute: 1,
-				controls: 0
+				controls: 0,
 			}
 		});
 	}

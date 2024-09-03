@@ -24,12 +24,25 @@ LOCATIONS = [ // http://stream1.bestfmbudapest.hu/bestfm_nyiregyhaza.mp3
 		"name": "Vitoria, ES - Brasil",
 		"videoId": "MftsQqgFKNU",
 		"radio": {
-			"url": "https://audio8.cmaudioevideo.com/proxy/fmsuperc/stream",
-			"name": "Rádio FM Super"
+			"url": "https:\/\/radio.saopaulo01.com.br\/8286\/stream\/1\/",
+			"name": "Rádio Cidade FM(Itapemirim)"
+		},
+		"startTime": 33
+	},
+	{
+		"id": 4,
+		"name": "Curitiba, PR - Brasil",
+		"videoId": "jE0twFwdNdQ",
+		"radio": {
+			"url": "https:\/\/s26.maxcast.com.br:8280\/live",
+			"name": "Universitária FM (Maringa)"
 		},
 		"startTime": 33
 	}
+	
 ]
+// LINK DE PLAYLIST	
+// https://www.youtube.com/watch?v=DhKHAopx7D0&list=PLiTmeQEZDk9wFFVAgcEahDs0sNABYrgLW
 
 function chooseRandomLocation() {
 	const availableLocations = LOCATIONS.filter(({id}) => state.currentLocation ? state.currentLocation.id !== id : true);

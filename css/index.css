@@ -36,10 +36,10 @@ SHOW/HIDE BUTTON``
 */
 .show-hide {
 	position: absolute;
-	right: 3px;
+	right: 17px;
 	color: white;
 	font-size: 20px;
-	top: 3px;
+	top: 13px;
 	cursor: pointer;
 	z-index: 3;
 }
